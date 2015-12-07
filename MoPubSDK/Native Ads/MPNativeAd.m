@@ -143,7 +143,13 @@
 {
     NSMutableURLRequest *request = [[MPCoreInstanceProvider sharedProvider] buildConfiguredURLRequestWithURL:URL];
     request.cachePolicy = NSURLRequestReloadIgnoringCacheData;
-    [NSURLConnection connectionWithRequest:request delegate:nil];
+    
+    NSURLConnection *connecton = [[NSURLConnection alloc] initWithRequest:request
+                                                                 delegate:self
+                                                         startImmediately:NO];
+    
+    [connecton scheduleInRunLoop:[NSRunLoop currentRunLoop] forMode:NSRunLoopCommonModes];
+    [connecton start];
 }
 
 #pragma mark - Internal
