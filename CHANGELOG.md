@@ -1,3 +1,11 @@
+## Version 4.4 (February 17th, 2016)
+
+- **Enabled SSL ad requests by default**
+- **Bug fixes**
+	- Fixed native video impression tracking
+	- Made closeable hot spot consistent across all full-screen creative types
+
+
 ## Version 4.3 (December 15th, 2015)
 
 - **Minor SDK improvements**.
