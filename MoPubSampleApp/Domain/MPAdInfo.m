@@ -28,7 +28,7 @@
     NSMutableArray *ads = [NSMutableArray array];
 
     [ads addObjectsFromArray:@[
-                               [MPAdInfo infoWithTitle:@"HTML Banner Ad" ID:@"c92be421345c4eab964645f6a1818284" type:MPAdInfoBanner],
+                               [MPAdInfo infoWithTitle:@"HTML Banner Ad" ID:@"0ac59b0996d947309c33f59d6676399f" type:MPAdInfoBanner],
                                [MPAdInfo infoWithTitle:@"MRAID Banner Ad" ID:@"23b49916add211e281c11231392559e4" type:MPAdInfoBanner],
                                [MPAdInfo infoWithTitle:@"HTML MRECT Banner Ad" ID:@"2aae44d2ab91424d9850870af33e5af7" type:MPAdInfoMRectBanner],
                                ]];
@@ -52,10 +52,7 @@
 + (NSArray *)rewardedVideoAds
 {
     return @[
-             [MPAdInfo infoWithTitle:@"Ad Colony" ID:@"16b039dc8c994ac89f0efe0a1bf77aa3" type:MPAdInfoRewardedVideo],
-             [MPAdInfo infoWithTitle:@"Chartboost" ID:@"8be0bb08fb4f4e90a86416c29c235d4a" type:MPAdInfoRewardedVideo],
-             [MPAdInfo infoWithTitle:@"Vungle" ID:@"48274e80f11b496bb3532c4f59f28d12" type:MPAdInfoRewardedVideo],
-             [MPAdInfo infoWithTitle:@"Unity" ID:@"091fb0bc95254e74a3f85753f589fdb7" type:MPAdInfoRewardedVideo]
+             [MPAdInfo infoWithTitle:@"Rewarded Video Ad" ID:@"8f000bd5e00246de9c789eed39ff6096" type:MPAdInfoRewardedVideo],
              ];
 }
 

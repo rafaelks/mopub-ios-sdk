@@ -13,9 +13,13 @@
 #import "MRNativeCommandHandler.h"
 #import "MRExpandModalViewController.h"
 #import "MPClosableView+MPSpecs.h"
+#import <Cedar/Cedar.h>
 
 using namespace Cedar::Matchers;
 using namespace Cedar::Doubles;
+
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wnonnull"
 
 @interface MRNativeCommandHandler () <MRCalendarManagerDelegate, MRPictureManagerDelegate, MRVideoPlayerManagerDelegate, MRCommandDelegate>
 
@@ -797,6 +801,13 @@ describe(@"MRController", ^{
 
                 controllerDelegate should have_received(@selector(adDidLoad:));
             });
+
+            it(@"should notify the delegate when the rewarded video finished playing", ^{
+                NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"mopub://rewardedVideoEnded"]];
+                [fakeMRBridge webView:webView shouldStartLoadWithRequest:request navigationType:UIWebViewNavigationTypeOther];
+
+                controllerDelegate should have_received(@selector(rewardedVideoEnded));
+            });
         });
     });
 
@@ -1568,3 +1579,5 @@ describe(@"MRController", ^{
 });
 
 SPEC_END
+
+#pragma clang diagnostic pop

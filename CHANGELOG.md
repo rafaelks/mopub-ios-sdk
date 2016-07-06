@@ -1,3 +1,22 @@
+## Version 4.7.0 (June 2nd, 2016)
+- **Rewarded video server-side currency rewarding (Beta)**.
+	
+## Version 4.6.0 (April 21th, 2016)
+- **Certified Chartboost version 6.4.0**
+- **Certified Tapjoy version 11.5.1**
+- **Bug fixes**
+	- Fixed resource loading issues when using cocoapods and frameworks
+
+## Version 4.5.1 (April 4th, 2016)
+
+- **bitcode support for MoPub Fabric Kit**
+	
+## Version 4.5 (March 24th, 2016)
+
+- **Rewarded video support from the MoPub Marketplace (Beta)**
+- **Bug fixes**
+	- The SDK now correctly sends matched modal presented/dismissed callbacks on clickthrough
+
 ## Version 4.4 (February 17th, 2016)
 
 - **Enabled SSL ad requests by default**
