@@ -1,3 +1,23 @@
+## Version 4.9.1 (September 14th, 2016)
+- **iOS 10 compatibility updates**
+	- Fixed an issue related to screen bounds calculation
+- **Removed EventKit, EventKitUI frameworks and a few files related to EventKit and MRAID image downloader**
+	- Please completely remove the MoPub SDK from your project and re-integrate this version to ensure that files are properly removed from your project
+
+## Version 4.9.0 (September 1st, 2016)
+- **Modular SDK - publishers can download the base or base excluding native SDK package**
+- **Removed the full SDK bundle**
+- **iOS 10 compatibility updates**
+	- Rotating frequency capping ID for non-targeted ads under 'Limit Ad Tracking' setting
+	- Removed save picture and save to calendar MRAID functionality
+- **Removed iAd and InMobi adapters**
+- **Added Cocoapods module name: "MoPub"**
+- **Bug fixes**
+  - Fixed an issue when multiple rewarded videos are loaded at the same time
+
+## Version 4.8.0 (August 1st, 2016)
+- **renamed MPError enums to avoid possible naming conflict with MediaPlayer framework errors**.
+
 ## Version 4.7.0 (June 2nd, 2016)
 - **Rewarded video server-side currency rewarding (Beta)**.
 	
