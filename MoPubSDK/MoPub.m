@@ -12,10 +12,7 @@
 #import "MPRewardedVideo.h"
 #import "MPIdentityProvider.h"
 
-#import "FABKitProtocol.h"
-#import "Fabric+FABKits.h"
-
-@interface MoPub () <FABKit>
+@interface MoPub ()
 
 @property (nonatomic, strong) NSArray *globalMediationSettings;
 
@@ -31,16 +28,6 @@
         sharedInstance = [[MoPub alloc] init];
     });
     return sharedInstance;
-}
-
-+ (NSString *)bundleIdentifier
-{
-    return MP_BUNDLE_IDENTIFIER;
-}
-
-+ (NSString *)kitDisplayVersion
-{
-    return MP_SDK_VERSION;
 }
 
 - (void)setLocationUpdatesEnabled:(BOOL)locationUpdatesEnabled
