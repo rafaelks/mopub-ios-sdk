@@ -6,7 +6,7 @@
     "type": "New BSD",
     "file": "LICENSE"
   },
-  "homepage": "https://github.com/mopub/mopub-ios-sdk",
+  "homepage": "https://github.com/rafaelks/mopub-ios-sdk",
   "authors": {
     "MoPub": "support@mopub.com"
   },
@@ -14,7 +14,7 @@
   "description": "MoPub is a hosted ad serving solution built specifically for mobile publishers.\n\nGrow your mobile advertising business with powerful ad management, optimization \n\nand reporting capabilities, and earn revenue by connecting to the world's largest \n\nmobile ad exchange. \n\n\nTo learn more or sign up for an account, go to http://www.mopub.com.",
   "social_media_url": "http://twitter.com/mopub",
   "source": {
-    "git": "https://github.com/mopub/mopub-ios-sdk.git",
+    "git": "https://github.com/rafaelks/mopub-ios-sdk.git",
     "tag": "4.12.0"
   },
   "requires_arc": true,
