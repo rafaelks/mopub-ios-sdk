@@ -24,7 +24,7 @@ The MoPub SDK is distributed as source code that you can include in your applica
 
   Includes everything you need to serve HTML and MRAID advertisements.  Third party ad networks and Native MoPub advertisements are not included.
 
-The current version of the SDK is 4.12.0
+The current version of the SDK is 4.13.1
 
 ## Integrate
 
@@ -36,15 +36,8 @@ More detailed class documentation is available in the repo under the `ClassDocum
 
 Please view the [changelog](https://github.com/mopub/mopub-ios-sdk/blob/master/CHANGELOG.md) for details.
 
-- **Features**
-	- Rewarded ad units now support rich media.
-	- Allow MoPub static native renderer to render Flurry native ads.
-	- Removed size limit for native ad main images.
-
 - **Bug Fixes**
-    - Native video selection logic now filters by supported MIME types.
-    - Ad placer now supports section count.
-    - Fix CFStringRef variable initialization.
+    - Fixed compile error in the MoPub Base SDK Excluding Native bundle.
 
 See the [Getting Started Guide](https://github.com/mopub/mopub-ios-sdk/wiki/Getting-Started#app-transport-security-settings) for instructions on setting up ATS in your app.  
 
