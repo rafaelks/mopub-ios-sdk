@@ -94,7 +94,11 @@
                                 networkInitializationOrder:(NSArray<NSString *> *)order
 {
     // initializeWithDelegate: is a known private initialization method on MPRewardedVideo. So we forward the initialization call to that class.
+    #pragma clang diagnostic push
+    #pragma clang diagnostic ignored "-Wundeclared-selector"
     [MPRewardedVideo performSelector:@selector(initializeWithDelegate:) withObject:delegate];
+    #pragma clang diagnostic pop
+
     [MPRewardedVideo initializeWithOrder:order];
     self.globalMediationSettings = globalMediationSettings;
 }
