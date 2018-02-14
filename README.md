@@ -17,7 +17,7 @@ To file an issue with our team, email [support@mopub.com](mailto:support@mopub.c
 Thank you for submitting pull requests to the MoPub iOS GitHub repository. Our team regularly monitors and investigates all submissions for inclusion in our official SDK releases. Please note that MoPub does not directly merge these pull requests at this time. Please reach out to your account team or [support@mopub.com](mailto:support@mopub.com) if you have further questions.
 
 ## Disclosure
-MoPub v4.16 SDK integrates technology from our partners Integral Ad Science, Inc. (“IAS”) and Moat, Inc. (“Moat”) in order to support viewability measurement and other proprietary reporting that [IAS](https://integralads.com/capabilities/viewability/) and [Moat](https://moat.com/analytics) provide to their advertiser and publisher clients. You have the option to remove or disable this technology by following the opt-out instructions [below](#disableViewability).
+MoPub SDK 4.16 and above integrates technology from our partners Integral Ad Science, Inc. (“IAS”) and Moat, Inc. (“Moat”) in order to support viewability measurement and other proprietary reporting that [IAS](https://integralads.com/capabilities/viewability/) and [Moat](https://moat.com/analytics) provide to their advertiser and publisher clients. You have the option to remove or disable this technology by following the opt-out instructions [below](#disableViewability).  
 
 If you do not remove or disable IAS's and/or Moat’s technology in accordance with these instructions, you agree that IAS's [privacy policy](https://integralads.com/privacy-policy/) and [license](https://integralads.com/sdk-license-agreement) and Moat’s [privacy policy](https://moat.com/privacy),  [terms](https://moat.com/terms), and [license](https://moat.com/sdklicense.txt), respectively, apply to your integration of these partners' technologies into your application.
 
@@ -33,7 +33,7 @@ The MoPub SDK is distributed as source code that you can include in your applica
 
   Includes everything you need to serve HTML and MRAID advertisements.  Third party ad networks and Native MoPub advertisements are not included.
 
-The current version of the SDK is 4.17.0
+The current version of the SDK is 4.19.0
 
 ## Integrate
 
@@ -45,10 +45,16 @@ More detailed class documentation is available in the repo under the `ClassDocum
 
 Please view the [changelog](https://github.com/mopub/mopub-ios-sdk/blob/master/CHANGELOG.md) for details.
 
-- **Features**
-    - Rewarded videos can now optionally pass back custom data to the publisher's reward server.
-    - Updated the minimum iOS version of the SDK to iOS 8.
-    - Update Facebook adapter with non whitespace clickable policy.
+- **Bug Fixes**
+	- Ensure proper viewability initialization before ad content is loaded
+	- Fire appropriate error delegate when rewarded video ad view is not ready to be shown
+	- Resolve video playback sizing issue when creative MoPubForceOrientation is set to "Device"
+	- Resolve WKWebView sizing and alignment issues on iPhoneX
+
+- **Ad Network Mediation Updates**
+	- Facebook Audience Network 4.26.1
+	- Flurry 8.1.0
+	- Millennial/AOL 6.6.0
 
 See the [Getting Started Guide](https://github.com/mopub/mopub-ios-sdk/wiki/Getting-Started#app-transport-security-settings) for instructions on setting up ATS in your app.  
 
@@ -73,7 +79,8 @@ See our [upgrade document](https://github.com/mopub/mopub-ios-sdk/wiki/Upgrading
 
 ## Requirements
 
-iOS 8.0 and up
+- iOS 8.0 and up
+- Xcode 9.0 and up
 
 ## License
 
