@@ -70,7 +70,7 @@ static NSString * const kMultiAdResponsesAdMarkupKey = @"adm";
     [self cancel];
 
     // Delete any cookies previous creatives have set before starting the load
-    [self removeAllMoPubCookies];>>>
+    [self removeAllMoPubCookies];
 
     // Check to be sure the SDK is initialized before starting the request
     if (!MoPub.sharedInstance.isSdkInitialized) {
